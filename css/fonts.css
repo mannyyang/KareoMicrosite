@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'omneslight';
+    src: url('fonts/omnes_light-webfont.eot');
+    src: url('fonts/omnes_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/omnes_light-webfont.woff') format('woff'),
+         url('fonts/omnes_light-webfont.ttf') format('truetype'),
+         url('fonts/omnes_light-webfont.svg#omneslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'omnes';
+    src: url('fonts/omnes-webfont.eot');
+    src: url('fonts/omnes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/omnes-webfont.woff') format('woff'),
+         url('fonts/omnes-webfont.ttf') format('truetype'),
+         url('fonts/omnes-webfont.svg#omnes') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

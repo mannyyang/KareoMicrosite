@@ -1,8 +1,8 @@
 /* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   HTML5 Boilerplate styles 
    ========================================================================== */
 
-/*   html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)  v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark  html5doctor.com/html-5-reset-stylesheet/*/
+/*   Reset Stylesheet  */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -105,94 +105,151 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+/* ===== Core Styles ==================================================
+   Author: Manuel Yang
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-image: url('../img/background.png');
+    background-repeat: repeat;
+    font: 16px/26px "Roboto", Helvetica, Helvetica Neue, Arial;
+}
+
+h1 {
+    font: 50px/120px "Roboto", Helvetica, Helvetica Neue, Arial;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    font: 36px "Roboto", Helvetica, Helvetica Neue, Arial;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    font: 18.75px "omnes", Helvetica, Helvetica Neue, Arial;
+}
+
+section {
+    width: 960px;
+    height: 420px;
+
+    /*padding: 50px 0;*/
+    margin: 50px auto;
+}
+
+article {
+    width: 430px;
+}
+
+.header-container {
+    padding: 25px;
+    border-top: 5px solid #3e4345;
+
+    background-color: transparent;
+}
+
+.main-container {
+    margin-bottom: 75px;
 }
 
 .wrapper {
-    width: 90%;
-    margin: 0 5%;
+    width: 1140px; 
+    margin: 0 auto;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
+/*============================
+    ALL: Kareo Microsite Theme
+============================== */
 
-.header-container {
-    border-bottom: 20px solid #e44d26;
+/***** HEADER *****/
+#kareo-logo {
+    width: 80px;
+    height: 80px;
+
+    background-image: url('../img/kareo-logo.png');
 }
+nav {
+    width: 475px;
+    height: 80px;
 
-.footer-container,
-.main aside {
-    border-top: 20px solid #e44d26;
+    background-color: #333333;
 }
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #f16529;
+nav ul {
+    padding: 30px 0 0 0;
 }
+nav a {
+    width: auto;
+    margin: 0 15px;
 
-.title {
+    font: 22px/16px "omnes";
+    letter-spacing: -1px;
+    font-weight: normal;
+    text-decoration: none;
+
     color: white;
 }
+nav a:first-child {
+    margin-left: 16px;
+}
+#cta-top {
+    margin-top: 17px;
+
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+#cta-top .button {
+    height: 37px;
+    width: 170px;
+
+    line-height: 37px;
+}
+#cta-top .button:hover {
+    cursor: pointer;
+}
+#cta-top .button:after {
+    content: url('../img/mail-icon-small.png');
+    position: relative;
+    top: 3px;
+    padding-left: 15px;
+}
+/***** END HEADER *****/
+
+/***** BODY *****/
+#img-wrapper {
+    width: 1140px;
+    height: 613px;
+
+    overflow: hidden;
+}
+#body-header {
+    height: 120px;
+    border-bottom: 1px solid #eeeeee;
+    
+    background-color: white;
+}
+.main-container .main {
+    background-color: white;
+}
+.section-container {
+    background-color: white;
+}
+
+/***** END BODY *****/
+
+
 
 /* ==============
     MOBILE: Menu
    ============== */
 
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
 
 /* ==============
     MOBILE: Main
    ============== */
 
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 2em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    color: white;
-    padding: 20px 0;
-}
 
 /* ===============
     ALL: IE Fixes
@@ -230,22 +287,6 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -265,39 +306,18 @@ nav a:hover {
     WIDE: CSS3 Effects
    ==================== */
 
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
 
 /* ============
     WIDE: Menu
    ============ */
 
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 38%;
-    }
+    
 
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
-        float: left;
-        width: 57%;
-    }
 
-    .main aside {
-        float: right;
-        width: 28%;
-    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -306,10 +326,7 @@ nav a:hover {
     Maximal Width
    =============== */
 
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
+    
 }
 
 /* ==========================================================================
@@ -372,6 +389,36 @@ nav a:hover {
 
 .clearfix {
     *zoom: 1;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.textleft {
+    text-align: left;
+}
+.textright {
+    text-align: right;
+}
+.button {
+    font-weight: 700;
+
+    background-color: #f7941d;
+    color: white;
+}
+.rounded {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; /* future proofing */
+}
+.filler {
+    width: 480px;
+    height: 480px;
+
+    background-color: lightblue;
 }
 
 /* ==========================================================================
