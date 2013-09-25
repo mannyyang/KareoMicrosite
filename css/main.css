@@ -127,6 +127,25 @@ h2 {
     margin-bottom: 20px;
 }
 
+h3 {
+    padding-top: 40px;
+
+    font: 22px "Roboto", Helvetica, Helvetica Neue, Arial;
+    text-align: center;
+
+    color: white;
+}
+
+h4 {
+    padding-top: 40px;
+
+    font: 28px "Roboto", Helvetica, Helvetica Neue, Arial;
+    font-weight: 500;
+    text-align: center;
+
+    color: white;
+}
+
 p {
     font: 18.75px "omnes", Helvetica, Helvetica Neue, Arial;
 }
@@ -134,13 +153,19 @@ p {
 section {
     width: 960px;
     height: 420px;
-
-    /*padding: 50px 0;*/
     margin: 50px auto;
+    border-bottom: 2px solid #eeeeee;
+}
+
+section:last-child {
+    border-bottom: none;
 }
 
 article {
     width: 430px;
+    height: auto;
+
+    padding: 20px 0;
 }
 
 .header-container {
@@ -152,6 +177,12 @@ article {
 
 .main-container {
     margin-bottom: 75px;
+}
+
+.main, 
+.section-container  {
+    overflow: hidden;
+    background-color: white;
 }
 
 .wrapper {
@@ -201,8 +232,8 @@ nav a:first-child {
     text-align: center;
 }
 #cta-top .button {
-    height: 37px;
     width: 170px;
+    height: 37px;
 
     line-height: 37px;
 }
@@ -230,10 +261,37 @@ nav a:first-child {
     
     background-color: white;
 }
-.main-container .main {
-    background-color: white;
+#cta-main {
+    height: 200px;
+
+    text-align: center;
+
+    background-color: #171717;
 }
-.section-container {
+#cta-main .button {
+    width: 258px;
+    height: 62px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 62px;
+}
+#cta-main .button:after {
+    content: url('../img/mail-icon.png');
+    position: relative;
+    top: 1px;
+    padding-left: 20px;
+}
+#testimonials {
+    height: 400px;
+    background-color: #333333;
+}
+#testimonials .qoutebox {
+    float: left;
+    width: 33.33%;
+    height: 250px;
     background-color: white;
 }
 
@@ -416,7 +474,7 @@ nav a:first-child {
 }
 .filler {
     width: 480px;
-    height: 480px;
+    height: 380px;
 
     background-color: lightblue;
 }
