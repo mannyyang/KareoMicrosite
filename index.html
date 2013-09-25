@@ -9,12 +9,16 @@
         <title>Kareo - Go Practice</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+        
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/font-icons.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="js/fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="css/main.css">
+
+        
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -30,18 +34,19 @@
                 <div id="kareo-logo" class="left"></div>
                 <nav class="left">
                     <ul>
-                        <li><a href="#">WHY KAREO</a></li>
-                        <li><a href="#">EHR</a></li>
-                        <li><a href="#">PM</a></li>
-                        <li><a href="#">BILLING SERVICES</a></li>
+                        <li><a href="http://www.kareo.com/why-kareo">WHY KAREO</a></li>
+                        <li><a href="http://www.kareo.com/ehr">EHR</a></li>
+                        <li><a href="http://www.kareo.com/practice-management">PM</a></li>
+                        <li><a href="http://www.kareo.com/billing-services">BILLING SERVICES</a></li>
                     </ul>
                 </nav>
                 <!-- END HEADER NAV -->
 
                 <!-- HEADER CTA -->
                 <div id="cta-top"class="right">
-                    <span>Want to learn more?</span>
-                    <div class="button rounded">Email Us</div>
+                    <span><i class="icon-phone"></i>866.231.2871</span>
+                    <a class="fancybox" data-fancybox-type="iframe" href="http://go.kareo.com/pp-print-go-practice-contact-us.html"><div class="button rounded">Learn More</div></a>
+                    
                 </div>
                 <!-- END HEADER CTA -->
             </header>
@@ -66,21 +71,27 @@
                 <!-- TOPICS -->
                 <div class="section-container">
                     <section>
-                        <div class="filler left"></div>
+                        <div class="filler left">
+                            <img src="img/topic1.png" alt="Business of Medicine">
+                        </div>
                         <article class="left">
                             <h2>The Business of Medicine</h2>
                             <p>is growing more complicated every day as insurance reimbursement rates decline, operating costs go up, and administrative challenges increase. From elaborate and confusing payment systems and intricate compliance requirements to IT-related issues like security and reliability, it is becoming increasingly difficult to manage the business of your practice without losing focus on the quality of care your patients receive.</p>    
                         </article>
                     </section>
                     <section>
-                        <div class="filler right"></div>
+                        <div class="filler right">
+                            <img src="img/topic2.png" alt="Kareo Believes">
+                        </div>
                         <article class="right textright">
                             <h2>At Kareo, We Believe in Your Practice.</h2>
                             <p>We know your practice can do big things, as long as you have the right tools and support. We can help you take your practice to the next level and spend more time focused on patients, not paperwork.  With our award winning EHR, Practice Management and Billing Services at work for your practice, you save time, collect more at a lower cost and get paid faster.</p>    
                         </article>
                     </section>
                     <section>
-                        <div class="filler left"></div>
+                        <div class="filler left">
+                            <img src="img/topic3.png" alt="20,000 Providers">
+                        </div>
                         <article class="left">
                             <h2>Over 20,000 providers</h2>
                             <p>use our products and services to improve their operations and deliver better patient care. We help turn private practices into best practices. What could we do for you?</p>    
@@ -92,22 +103,43 @@
                 <!-- CTA MAIN -->
                 <div id="cta-main">
                     <h3>Discover what Kareo can do for you.</h3>
-                    <div class="button rounded">Contact Us</div>
+                    <div class="button rounded">Learn More</div>
+                    <span>Or call us @ 866.231.2871</span>
                 </div>
                 <!-- END CTA MAIN -->
                 
                 <!-- TESTIMONIALS -->
                 <div id="testimonials">
                     <h4 class="clearfix">See What Others Say About Kareo</h4>
-                    <div class="qoutebox"></div>
-                    <div class="qoutebox"></div>
-                    <div class="qoutebox"></div>
+                    <div class="qoutebox">
+                        <div class="qoute">
+                            <img src="img/qoute1.png" alt="Dr. Baxley">
+                        </div>
+                    </div>
+                    <div class="qoutebox">
+                        <div class="qoute">
+                            <img src="img/qoute2.png" alt="Dr. Cunningham">
+                        </div>
+                    </div>
+                    <div class="qoutebox">
+                        <div class="qoute">
+                            <img src="img/qoute3.png" alt="Dr. Michalopulos">
+                        </div>
+                    </div>
                 </div>
                 <!-- END TESTIMONIALS -->
 
-
             </div> <!-- #main -->
+            <div class="social-container wrapper">
+                <span>Connect With Us</span>
+                <ul class="social">
+                    <li class="facebook"><a href="https://www.facebook.com/GoKareo" target="_blank">Facebook</a></li>
+                    <li class="twitter"><a href="https://twitter.com/GoKareo" target="_blank">Twitter</a></li>
+                    <li class="linkedin"><a href="http://www.linkedin.com/company/kareo" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
         </div> <!-- #main-container -->
+        
         <!-- END BODY -->
 
         <div class="footer-container">
@@ -117,7 +149,12 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="js/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

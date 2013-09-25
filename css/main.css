@@ -128,7 +128,7 @@ h2 {
 }
 
 h3 {
-    padding-top: 40px;
+    padding-top: 30px;
 
     font: 22px "Roboto", Helvetica, Helvetica Neue, Arial;
     text-align: center;
@@ -146,6 +146,14 @@ h4 {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CDCDCD;
+}
+
 p {
     font: 18.75px "omnes", Helvetica, Helvetica Neue, Arial;
 }
@@ -153,11 +161,13 @@ p {
 section {
     width: 960px;
     height: 420px;
-    margin: 50px auto;
+    padding-top: 25px;
+    margin: 40px auto;
     border-bottom: 2px solid #eeeeee;
 }
 
 section:last-child {
+    height: 350px;
     border-bottom: none;
 }
 
@@ -183,6 +193,16 @@ article {
 .section-container  {
     overflow: hidden;
     background-color: white;
+    -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.50);
+    -moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.50);
+    box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.50);
+}
+
+.social-container {
+    padding-top: 25px;
+
+    font: 20px "omnes", Helvetica, Helvetica Neue, Arial;
+    text-align: center;
 }
 
 .wrapper {
@@ -214,7 +234,7 @@ nav a {
     width: auto;
     margin: 0 15px;
 
-    font: 22px/16px "omnes";
+    font: 22px/16px "omneslight";
     letter-spacing: -1px;
     font-weight: normal;
     text-decoration: none;
@@ -227,24 +247,23 @@ nav a:first-child {
 #cta-top {
     margin-top: 17px;
 
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 700;
     text-align: center;
+}
+#cta-top span {
+    position: relative;
+    bottom: 5px;
+}
+#cta-top .icon-phone {
+    margin-right: 10px;
 }
 #cta-top .button {
     width: 170px;
     height: 37px;
 
+    font-weight: 400;
     line-height: 37px;
-}
-#cta-top .button:hover {
-    cursor: pointer;
-}
-#cta-top .button:after {
-    content: url('../img/mail-icon-small.png');
-    position: relative;
-    top: 3px;
-    padding-left: 15px;
 }
 /***** END HEADER *****/
 
@@ -258,14 +277,29 @@ nav a:first-child {
 #body-header {
     height: 120px;
     border-bottom: 1px solid #eeeeee;
-    
+    -webkit-box-shadow: 0px 3px 6px rgba(50, 50, 50, 0.42);
+    -moz-box-shadow:    0px 3px 6px rgba(50, 50, 50, 0.42);
+    box-shadow:         0px 3px 6px rgba(50, 50, 50, 0.42);
+
     background-color: white;
+
+    z-index: 10000;
+}
+.filler img:first-child {
+    position: absolute;
+    left: 55px;
+}
+.filler img:last-child {
+    position: absolute;
+    top: 20px;
 }
 #cta-main {
-    height: 200px;
+    height: 210px;
 
+    font-size: 20px;
     text-align: center;
 
+    color: white;
     background-color: #171717;
 }
 #cta-main .button {
@@ -273,30 +307,38 @@ nav a:first-child {
     height: 62px;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 5px;
 
     font-size: 30px;
     font-weight: bold;
     line-height: 62px;
-}
-#cta-main .button:after {
-    content: url('../img/mail-icon.png');
-    position: relative;
-    top: 1px;
-    padding-left: 20px;
 }
 #testimonials {
     height: 400px;
     background-color: #333333;
 }
 #testimonials .qoutebox {
-    float: left;
     width: 33.33%;
     height: 250px;
-    background-color: white;
+    float: left;
+
+    margin-top: 25px;
 }
+#testimonials .qoutebox .qoute {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
 
+    background-color: grey;
+}
+ul.social {
+
+    width: 162px;
+    margin: 0 auto;
+    margin-top: 10px;
+
+}
 /***** END BODY *****/
-
 
 
 /* ==============
@@ -467,6 +509,10 @@ nav a:first-child {
     background-color: #f7941d;
     color: white;
 }
+.button:hover {
+    color: #333333;
+    cursor: pointer;
+}
 .rounded {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -474,9 +520,27 @@ nav a:first-child {
 }
 .filler {
     width: 480px;
-    height: 380px;
+    height: 350px;
+    position: relative;
 
-    background-color: lightblue;
+    background-color: transparent;
+}
+
+/***** Social Icons *****/
+.social { list-style: none; padding: 0; margin: 0; overflow: hidden;}
+.social li { float: left; margin-left: 15px; }
+.social li:nth-child(1) { margin-left: 0;}
+.social li a { width:44px; height: 44px; display: block; background:url("../img/social-media-pack-html.png") no-repeat; text-indent: -9999px; }
+li.facebook a { background-position: 0 0}
+li.facebook a:hover { background-position: 0 -44px}
+li.twitter a { background-position: -44px 0}
+li.twitter a:hover { background-position: -44px -44px}
+li.linkedin a { background-position: -132px 0}
+li.linkedin a:hover { background-position: -132px -44px}
+
+/* Only High-Res Display - Retina Screens*/
+@media screen and (max-device-width: 1180px), only screen and (min-resolution: 120dpi)  {
+.social li a { background:url("img/social-media-pack-html.svg") no-repeat;}
 }
 
 /* ==========================================================================

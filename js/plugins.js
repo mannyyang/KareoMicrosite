@@ -22,3 +22,13 @@
 }());
 
 // Place any jQuery/helper plugins in here.
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+        width    : 300,
+        height   : 400,
+        scrolling: 'no',
+        scrollOutside: false,
+        iframe: { scrolling: 'no' },
+        autoSize    : false
+    });
+});
